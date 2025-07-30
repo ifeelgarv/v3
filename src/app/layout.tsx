@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import { Analytics } from '@vercel/analytics/next';
 
 const diaType = localFont({
   src: [
@@ -62,6 +63,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${diaType.variable} ${ppModwest.variable} antialiased overflow-hidden` }cz-shortcut-listen="true">
         {children}
+        <Analytics />
       </body>
     </html>
   );
