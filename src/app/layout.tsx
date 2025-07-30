@@ -63,18 +63,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta property="og:image:alt" content="Portfolio of Gaurav Singh" />
-        <meta property="og:image:type" content="public/og-image.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-      </head>
-      <body className={`${diaType.variable} ${ppModwest.variable} antialiased overflow-hidden` }>
+      <body className={`${diaType.variable} ${ppModwest.variable} antialiased overflow-hidden`}>
         {children}
         <Analytics />
       </body>
