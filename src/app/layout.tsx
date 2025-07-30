@@ -42,7 +42,14 @@ export const metadata: Metadata = {
     description: "Explore Gaurav's profile - projects.",
     url: "https://gauravsingh.co.in",
     siteName: "Gaurav's Portfolio",
-    images: ["https://gauravsingh.co.in/og-image.png"],
+    images: [
+      {
+        url: "https://gauravsingh.co.in/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Tanmay Profile Preview",
+      },
+    ],
     locale: "en-US",
     type: "website",
   },
@@ -61,7 +68,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${diaType.variable} ${ppModwest.variable} antialiased overflow-hidden` }cz-shortcut-listen="true">
+      <head>
+        <meta property="og:image:alt" content="Portfolio of Gaurav Singh" />
+        <meta property="og:image:type" content="public/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+      </head>
+      <body className={`${diaType.variable} ${ppModwest.variable} antialiased overflow-hidden` }>
         {children}
         <Analytics />
       </body>
