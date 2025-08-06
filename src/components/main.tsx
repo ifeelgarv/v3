@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import { ExternalLink } from "lucide-react";
 
-const roles = ["project engineer", "shitposter", "developer", "aspirant"];
+const roles = ["project engineer", "shitposter",  "developer", "shitposter"];
 
 const textVariants = {
   initial: { opacity: 0, y: 10 },
@@ -17,7 +17,7 @@ export const Main = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % roles.length);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
@@ -26,8 +26,8 @@ export const Main = () => {
     <section className="flex-grow">
       <div className="flex items-center justify-between mb-2">
         <div className="flex flex-col">
-          <h1 className="font-ppModwest text-2xl">gaurav kr. singh</h1>
-          <h2 className="text-secondary-foreground mb-2 font-medium overflow-hidden">
+          <h1 className="font-ppModwest text-2xl">Gaurav Kr. Singh</h1>
+          <h2 className="text-secondary-foreground mb-4 font-sm overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.span
                 key={roles[index]}
@@ -56,7 +56,7 @@ export const Main = () => {
       </div>
 
       <p className="mb-2">
-        currently, soon joining {" "}
+        23 y/o cs grad. soon joining {" "}
         <a
           href="https://www.wipro.com"
           target="_blank"
@@ -65,12 +65,11 @@ export const Main = () => {
         >
           wipro
         </a>
-        {" "}as a project engineer,{" "}
-        <a href="https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering"
+        {" "}as a project engineer and building full-stack stuff.
+        {/* <a href="https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline decoration-dashed underline-offset-[5px] transition-colors duration-300 hover:text-white">gate</a> {" "}aspirant
-          and working across full-stack stuff.
+          className="underline decoration-dashed underline-offset-[5px] transition-colors duration-300 hover:text-white">GATE</a>  */}
       </p>
 
       <p>{`in my downtime, i enjoy reading and catching up on tech podcasts.`}</p>

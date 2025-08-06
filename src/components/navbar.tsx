@@ -4,6 +4,12 @@ export const Navbar = () => {
   return (
     <div className="flex flex-col gap-1">
       <Link
+        href="/blogs"
+        className="underline decoration-dashed underline-offset-[5px]"
+      >
+        blogs
+      </Link>
+      <Link
         href="/projects"
         className="underline decoration-dashed underline-offset-[5px]"
       >
@@ -15,6 +21,7 @@ export const Navbar = () => {
       >
         experiences
       </Link>
+      
     </div>
   );
 };
