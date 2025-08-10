@@ -63,7 +63,7 @@ export const Main = () => {
           rel="noopener noreferrer"
           className="underline decoration-dashed underline-offset-[5px]"
         >
-          wipro
+          Wipro
         </a>
         {" "}as a project engineer and building full-stack stuff.
         {/* <a href="https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering"

@@ -18,13 +18,13 @@ const experiences = [
     id: "3",
     title: "Frontend Intern at mythyaverse",
     href: "https://mythyaverse.com/",
-    date: "Oct 2024 - Dec 2024",
+    date: "Oct - Dec 2024",
   },
 ];
 
 export default function Experience() {
   return (
-    <section className="mb-16">
+    <section className="relative flex flex-col gap-4">
       <div className="space-y-4">
         {experiences.map((experience, index) => (
           <motion.a
@@ -32,7 +32,7 @@ export default function Experience() {
             href={experience.href}
             target="_blank"
             rel="noreferrer"
-            className="relative z-10 -mx-1 flex cursor-pointer flex-col gap-1 rounded-lg border border-secondary-foreground bg-secondary p-4 hover:shadow-lg"
+            className="relative z-10 flex cursor-pointer flex-col gap-10 rounded-lg border border-secondary-foreground bg-secondary p-4 hover:shadow-lg"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             initial={{ opacity: 0, y: 10 }}
@@ -43,10 +43,10 @@ export default function Experience() {
             }}
           >
             <div className="flex items-center justify-between">
-              <span className="text-sm font-sm text-secondary-foreground/70">
+              <span className="text-xs md:text-base">
                 {experience.date}
               </span>
-              <h3 className="text-sm font-sm">
+              <h3 className="text-xs md:text-base">
                 {experience.id === "3" ? (
                   <>
                     Frontend Intern at{" "}

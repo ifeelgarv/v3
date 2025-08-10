@@ -6,7 +6,7 @@ const projects = [
   {
     id: "freehandX",
     title: "freehandX",
-    description: "a collaborative whiteboard app for brainstorming and ideation",
+    description: "a real-time collaborative whiteboard app for brainstorming and ideation.",
     href: "https://github.com/ifeelgarv/FreehandX",
   },
   {
@@ -18,7 +18,7 @@ const projects = [
   {
     id: "pdf",
     title: "chat-with-pdf",
-    description: "a web app that allows you to chat with your PDF documents",
+    description: "a web app that allows you to chat with your PDF documents.",
     href: "https://github.com/ifeelgarv/chat-with-pdf-AI-SaaS",
   },
 ];
@@ -31,7 +31,7 @@ export default function Projects() {
           key={project.id}
           href={project.href}
           target="_blank"
-          className="relative z-10 -mx-1 flex cursor-pointer flex-col gap-1 rounded-lg border border-secondary-foreground bg-secondary p-4 text-secondary-foreground hover:bg-secondary/80 hover:shadow-lg"
+          className="relative z-10 -mx-1 flex cursor-pointer flex-col gap-1 rounded-lg border border-secondary-foreground bg-secondary p-4  hover:bg-secondary/80 hover:shadow-lg"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           initial={{ opacity: 0, y: 10 }}
@@ -40,7 +40,7 @@ export default function Projects() {
           transition={{ duration: 0.3 }}
           rel="noreferrer"
         >
-          <h1 className="relative z-10 text-lg font-medium">{project.title}</h1>
+          <h1 className="relative z-10 text-sm font-medium md:text-base">{project.title}</h1>
           <p className="text-sm text-secondary-foreground relative z-10">
             {project.description}
           </p>
