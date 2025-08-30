@@ -7,19 +7,25 @@ const projects = [
     id: "freehandX",
     title: "freehandX",
     description: "a real-time collaborative whiteboard app for brainstorming and ideation.",
-    href: "https://github.com/ifeelgarv/FreehandX",
+    href: "https://freehandx.gauravsingh.co.in/",
   },
   {
     id: "domcraft",
     title: "domcraft",
     description: "a chrome extension that lets you modify website using natural language.",
-    href: "https://github.com/ifeelgarv/DOMCraft-extension",
+    href: "https://drive.google.com/file/d/1OMP5khnNDDO1lxSSXiGf7Oih-UyNP1FV/view?usp=drive_link",
+  },
+  {
+    id: "qrtool",
+    title: "qr-tool",
+    description: "a tool for generating qr.",
+    href: "https://tool.qr.gauravsingh.co.in/",
   },
   {
     id: "pdf",
     title: "chat-with-pdf",
     description: "a web app that allows you to chat with your PDF documents.",
-    href: "https://github.com/ifeelgarv/chat-with-pdf-AI-SaaS",
+    href: "https://chat-with-pdf-zeta-six.vercel.app/",
   },
 ];
 

@@ -66,7 +66,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${diaType.variable} ${ppModwest.variable} antialiased overflow-hidden`}>
+      <body className={`${diaType.variable} ${ppModwest.variable} antialiased overflow-hidden cz-shortcut-listen="true"`}>
         {children}
         <Analytics />
       </body>
