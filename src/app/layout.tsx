@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-import { Analytics } from '@vercel/analytics/next';
+import { Databuddy } from '@databuddy/sdk';
 
 const diaType = localFont({
   src: [
@@ -68,7 +68,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${diaType.variable} ${ppModwest.variable} antialiased overflow-hidden cz-shortcut-listen="true"`}>
         {children}
-        <Analytics />
+        <Databuddy
+        clientId="kg1et24h2u5lO07vGiwMh"
+        trackBounceRate={true}
+        enableBatching={true}
+      />
       </body>
     </html>
   );
